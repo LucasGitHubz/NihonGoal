@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cXk-aD-Sug">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Katakana-->
+        <scene sceneID="WRW-9q-SzR">
+            <objects>
+                <viewController id="cXk-aD-Sug" customClass="KatakanaViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WYh-bJ-gMn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKu-St-Y4H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-YL-Mj2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DgW-YL-Mj2" secondAttribute="height" multiplier="207:22" id="AGa-NH-fKe"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.96993559600000001" green="0.70443765189999996" blue="0.45160142549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Katakana" id="FnK-S3-tnD"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Vvu-2N-7Fa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cXk-aD-Sug" id="u3M-1u-BLK"/>
+                                    <outlet property="delegate" destination="cXk-aD-Sug" id="CR8-eR-5Uh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96993559600000001" green="0.70443765189999996" blue="0.45160142549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DgW-YL-Mj2" firstAttribute="leading" secondItem="Fio-R8-ycz" secondAttribute="leading" id="6wV-ef-e68"/>
+                            <constraint firstItem="Fio-R8-ycz" firstAttribute="bottom" secondItem="Vvu-2N-7Fa" secondAttribute="bottom" id="8sf-bh-fed"/>
+                            <constraint firstItem="jKu-St-Y4H" firstAttribute="leading" secondItem="Fio-R8-ycz" secondAttribute="leading" id="Bdg-BD-vzp"/>
+                            <constraint firstItem="DgW-YL-Mj2" firstAttribute="top" secondItem="Fio-R8-ycz" secondAttribute="top" id="G0J-E9-Oca"/>
+                            <constraint firstItem="jKu-St-Y4H" firstAttribute="trailing" secondItem="Fio-R8-ycz" secondAttribute="trailing" id="Gu6-bO-dwK"/>
+                            <constraint firstItem="DgW-YL-Mj2" firstAttribute="trailing" secondItem="Fio-R8-ycz" secondAttribute="trailing" id="NGQ-aa-tiX"/>
+                            <constraint firstAttribute="bottom" secondItem="jKu-St-Y4H" secondAttribute="bottom" id="TGC-vz-FkF"/>
+                            <constraint firstItem="jKu-St-Y4H" firstAttribute="top" secondItem="Fio-R8-ycz" secondAttribute="top" id="cJ8-Ol-2fO"/>
+                            <constraint firstItem="Vvu-2N-7Fa" firstAttribute="top" secondItem="DgW-YL-Mj2" secondAttribute="bottom" id="cxS-XY-oHt"/>
+                            <constraint firstItem="Vvu-2N-7Fa" firstAttribute="leading" secondItem="Fio-R8-ycz" secondAttribute="leading" id="roj-Zl-I77"/>
+                            <constraint firstItem="Fio-R8-ycz" firstAttribute="trailing" secondItem="Vvu-2N-7Fa" secondAttribute="trailing" id="ujR-Vc-dSR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fio-R8-ycz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Katakana" image="katakana" id="cR5-v1-4Gb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="jKu-St-Y4H" id="bfv-vC-yBy"/>
+                        <outlet property="tableView" destination="Vvu-2N-7Fa" id="9PI-fJ-WY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oT6-R9-3rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.71014492753625" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="katakana" width="25" height="25"/>
+    </resources>
+</document>

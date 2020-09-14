@@ -1,0 +1,6 @@
+framework module Pods_NihonGoal_NihonGoalUITests {
+  umbrella header "Pods-NihonGoal-NihonGoalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

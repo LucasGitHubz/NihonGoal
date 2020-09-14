@@ -1,0 +1,3 @@
+NihonGoal est une application vous permettant d'apprendre les hiragana et katakan !
+Apprenez les, puis lorsque vous vous sentez prêt, attaquez-vous à la partie "S'exercer".
+Commencez par le mode ZEN pour tester vos compétences et si vous vous en sentez capable, laissez-vous tenter par le mode RAPIDE ! Ce mode mettra vos capacités à rude épreuve et, si réussite, vous donnera une totale confiance dans la lecture des kanas !

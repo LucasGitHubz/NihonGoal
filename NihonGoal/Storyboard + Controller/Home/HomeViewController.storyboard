@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Ep-Pc-UFE">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accueil-->
+        <scene sceneID="sGz-Zl-cw9">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ep-Pc-UFE" customClass="HomeViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EgJ-uv-sFm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test4" translatesAutoresizingMaskIntoConstraints="NO" id="wiB-21-RKf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nihonGoal" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-An-Xxr" customClass="CustomHomeImageView" customModule="NihonGoal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="15" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UZq-An-Xxr" secondAttribute="height" multiplier="85:17" id="8cX-fj-L8z"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-Vx-MQf">
+                                <rect key="frame" x="20" y="127" width="280" height="314"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-Qr-b1W">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="78"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-Ph-fIZ" customClass="CustomHomeView" customModule="NihonGoal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="78"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulle 3 copie" translatesAutoresizingMaskIntoConstraints="NO" id="ABf-Od-kn2">
+                                                        <rect key="frame" x="0.0" y="-38" width="137" height="137"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ABf-Od-kn2" secondAttribute="height" multiplier="1:1" id="fmc-PE-3JK"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vow-2N-QVa" customClass="CustomHomeButton" customModule="NihonGoal" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="-38" width="137" height="137"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="Hiragana">
+                                                            <color key="titleColor" red="0.71648177149562287" green="0.59062488922600109" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapHiraganaButton:" destination="6Ep-Pc-UFE" eventType="touchUpInside" id="tS6-3S-Ta9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="leading" secondItem="Vow-2N-QVa" secondAttribute="leading" id="9SG-qe-y0m"/>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="leading" secondItem="HSa-Ph-fIZ" secondAttribute="leading" id="9im-xd-CdV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ABf-Od-kn2" secondAttribute="bottom" constant="-21" id="Qqd-FZ-wFF"/>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="top" secondItem="Vow-2N-QVa" secondAttribute="top" id="TBj-Sp-YeK"/>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="bottom" secondItem="Vow-2N-QVa" secondAttribute="bottom" id="Yns-b8-cl4"/>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="trailing" secondItem="Vow-2N-QVa" secondAttribute="trailing" id="aQc-3n-Yjt"/>
+                                                    <constraint firstItem="ABf-Od-kn2" firstAttribute="top" secondItem="HSa-Ph-fIZ" secondAttribute="top" constant="-38" id="uoW-FX-H5w"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-Aa-9fi">
+                                        <rect key="frame" x="0.0" y="118" width="280" height="78"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-Bo-FA5" customClass="CustomHomeView" customModule="NihonGoal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="78"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulle 3 copie" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-GK-F8u">
+                                                        <rect key="frame" x="71.5" y="-30" width="137" height="137"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="9oY-GK-F8u" secondAttribute="height" multiplier="1:1" id="ePI-30-BxR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-LN-4zL" customClass="CustomHomeButton" customModule="NihonGoal" customModuleProvider="target">
+                                                        <rect key="frame" x="71.5" y="-30" width="137" height="137"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="Katakana">
+                                                            <color key="titleColor" red="0.96993559600000001" green="0.623278632" blue="0.21707657499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapKatakanaButton:" destination="6Ep-Pc-UFE" eventType="touchUpInside" id="eoS-1x-BM8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="top" secondItem="aLa-Bo-FA5" secondAttribute="top" constant="-30" id="5VT-z8-cMv"/>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="top" secondItem="Kim-LN-4zL" secondAttribute="top" id="6r8-pU-GZ4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9oY-GK-F8u" secondAttribute="bottom" constant="-29" id="8Iy-0j-X5S"/>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="leading" secondItem="Kim-LN-4zL" secondAttribute="leading" id="ORX-ne-YoE"/>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="bottom" secondItem="Kim-LN-4zL" secondAttribute="bottom" id="S67-Ab-g3S"/>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="centerX" secondItem="aLa-Bo-FA5" secondAttribute="centerX" id="XOE-UJ-9Bs"/>
+                                                    <constraint firstItem="9oY-GK-F8u" firstAttribute="trailing" secondItem="Kim-LN-4zL" secondAttribute="trailing" id="mak-RI-vSv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="jNt-gW-DVb">
+                                        <rect key="frame" x="0.0" y="236" width="280" height="78"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-Fg-X5B" customClass="CustomHomeView" customModule="NihonGoal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="78"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulle 3 copie" translatesAutoresizingMaskIntoConstraints="NO" id="bCf-E8-79f">
+                                                        <rect key="frame" x="143" y="-25" width="137" height="137"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bCf-E8-79f" secondAttribute="height" multiplier="1:1" id="Zm3-ch-dmy"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwl-qn-3Nc" customClass="CustomHomeButton" customModule="NihonGoal" customModuleProvider="target">
+                                                        <rect key="frame" x="143" y="-25" width="137" height="137"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="S'exercer">
+                                                            <color key="titleColor" red="0.99193829300000003" green="0.50665361040000001" blue="0.53107846910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapPracticeButton:" destination="6Ep-Pc-UFE" eventType="touchUpInside" id="YEq-22-QDg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bCf-E8-79f" firstAttribute="trailing" secondItem="jwl-qn-3Nc" secondAttribute="trailing" id="3iM-X3-xub"/>
+                                                    <constraint firstItem="bCf-E8-79f" firstAttribute="leading" secondItem="jwl-qn-3Nc" secondAttribute="leading" id="70e-UD-vd2"/>
+                                                    <constraint firstItem="bCf-E8-79f" firstAttribute="bottom" secondItem="jwl-qn-3Nc" secondAttribute="bottom" id="Ofv-Kt-Aeg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bCf-E8-79f" secondAttribute="trailing" id="sSg-0a-O92"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bCf-E8-79f" secondAttribute="bottom" constant="-34" id="to0-cW-SME"/>
+                                                    <constraint firstItem="bCf-E8-79f" firstAttribute="top" secondItem="sNg-Fg-X5B" secondAttribute="top" constant="-25" id="wLD-fv-h2J"/>
+                                                    <constraint firstItem="bCf-E8-79f" firstAttribute="top" secondItem="jwl-qn-3Nc" secondAttribute="top" id="wXM-z0-vAY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l7X-Vx-MQf" secondAttribute="height" multiplier="423:475" id="6Q1-4Y-QOR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wiB-21-RKf" secondAttribute="bottom" id="2hU-sE-xVA"/>
+                            <constraint firstItem="UZq-An-Xxr" firstAttribute="top" secondItem="Xcy-gc-Vzj" secondAttribute="top" constant="15" id="6FQ-oq-IgC"/>
+                            <constraint firstItem="UZq-An-Xxr" firstAttribute="leading" secondItem="Xcy-gc-Vzj" secondAttribute="leading" constant="20" id="D7A-ao-3TY"/>
+                            <constraint firstItem="Xcy-gc-Vzj" firstAttribute="trailing" secondItem="l7X-Vx-MQf" secondAttribute="trailing" constant="20" id="YoZ-wA-r9h"/>
+                            <constraint firstItem="l7X-Vx-MQf" firstAttribute="centerY" secondItem="EgJ-uv-sFm" secondAttribute="centerY" id="ZGT-D8-qEH"/>
+                            <constraint firstItem="wiB-21-RKf" firstAttribute="top" secondItem="EgJ-uv-sFm" secondAttribute="top" id="bjr-ML-R5F"/>
+                            <constraint firstItem="wiB-21-RKf" firstAttribute="trailing" secondItem="Xcy-gc-Vzj" secondAttribute="trailing" id="kJE-h7-pmo"/>
+                            <constraint firstItem="wiB-21-RKf" firstAttribute="leading" secondItem="Xcy-gc-Vzj" secondAttribute="leading" id="kYR-ni-ShN"/>
+                            <constraint firstItem="Xcy-gc-Vzj" firstAttribute="trailing" secondItem="UZq-An-Xxr" secondAttribute="trailing" constant="20" id="mC8-gj-jCD"/>
+                            <constraint firstItem="l7X-Vx-MQf" firstAttribute="leading" secondItem="Xcy-gc-Vzj" secondAttribute="leading" constant="20" id="wol-Xn-lcQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xcy-gc-Vzj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Accueil" image="house" id="Pgh-cb-xnO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="hiraganaBubble" destination="ABf-Od-kn2" id="23G-4H-cG5"/>
+                        <outlet property="katakanaBubble" destination="9oY-GK-F8u" id="T06-C4-iZs"/>
+                        <outlet property="practiceBubble" destination="bCf-E8-79f" id="38a-1l-kWN"/>
+                        <outlet property="practiceButton" destination="jwl-qn-3Nc" id="jbZ-Ca-Yzr"/>
+                        <segue destination="O6Y-Qb-cRG" kind="unwind" identifier="unwindToHiragana" unwindAction="unwindToHiraganaWithSegue:" id="7M4-6a-lVw"/>
+                        <segue destination="O6Y-Qb-cRG" kind="unwind" identifier="unwindToKatakana" unwindAction="unwindToKatakanaWithSegue:" id="z3J-yU-zVL"/>
+                        <segue destination="O6Y-Qb-cRG" kind="unwind" identifier="unwindToPractice" unwindAction="unwindToPracticeWithSegue:" id="c10-jR-4OL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJi-nq-g7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="O6Y-Qb-cRG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="742.5" y="-82.394366197183103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulle 3 copie" width="313" height="313"/>
+        <image name="house" width="25" height="25"/>
+        <image name="nihonGoal" width="862" height="289"/>
+        <image name="test4" width="640" height="1136"/>
+    </resources>
+</document>

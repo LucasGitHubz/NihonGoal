@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wfz-qr-Fqs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hiragana-->
+        <scene sceneID="mRr-rR-nxi">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="Wfz-qr-Fqs" customClass="HiraganaViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I29-e9-Bnq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-ER-eSF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-G5-6eE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zc7-G5-6eE" secondAttribute="height" multiplier="207:22" id="gyn-OX-GE3"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.63768118620000003" green="0.61741495130000001" blue="0.97259372470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Hiragana" id="SzI-BQ-VAt"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-1b-0xp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wfz-qr-Fqs" id="I4l-UB-81R"/>
+                                    <outlet property="delegate" destination="Wfz-qr-Fqs" id="4TN-qf-Tpl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64156353470000005" green="0.62143594030000004" blue="0.97259348629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BqZ-1b-0xp" firstAttribute="top" secondItem="Zc7-G5-6eE" secondAttribute="bottom" id="8Hu-hA-zYA"/>
+                            <constraint firstItem="2LS-ER-eSF" firstAttribute="top" secondItem="KgD-DT-FCK" secondAttribute="top" id="BBF-u7-oaP"/>
+                            <constraint firstItem="Zc7-G5-6eE" firstAttribute="trailing" secondItem="KgD-DT-FCK" secondAttribute="trailing" id="EeP-j8-Mah"/>
+                            <constraint firstAttribute="bottom" secondItem="2LS-ER-eSF" secondAttribute="bottom" id="L8G-Jq-h3N"/>
+                            <constraint firstItem="KgD-DT-FCK" firstAttribute="trailing" secondItem="2LS-ER-eSF" secondAttribute="trailing" id="QGO-xX-lj5"/>
+                            <constraint firstItem="BqZ-1b-0xp" firstAttribute="leading" secondItem="KgD-DT-FCK" secondAttribute="leading" id="gPM-Im-kmN"/>
+                            <constraint firstItem="BqZ-1b-0xp" firstAttribute="bottom" secondItem="KgD-DT-FCK" secondAttribute="bottom" id="gt2-K2-jV3"/>
+                            <constraint firstItem="2LS-ER-eSF" firstAttribute="leading" secondItem="I29-e9-Bnq" secondAttribute="leading" id="iHJ-Vi-QhX"/>
+                            <constraint firstItem="Zc7-G5-6eE" firstAttribute="top" secondItem="KgD-DT-FCK" secondAttribute="top" id="nvi-uk-6wX"/>
+                            <constraint firstItem="BqZ-1b-0xp" firstAttribute="trailing" secondItem="KgD-DT-FCK" secondAttribute="trailing" id="oAq-b5-KsZ"/>
+                            <constraint firstItem="Zc7-G5-6eE" firstAttribute="leading" secondItem="KgD-DT-FCK" secondAttribute="leading" id="v3q-rA-PkO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KgD-DT-FCK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hiragana" image="hiragana" id="u6P-yf-upq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="2LS-ER-eSF" id="I6R-i8-yga"/>
+                        <outlet property="tableView" destination="BqZ-1b-0xp" id="Ygf-9I-VRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="479-LQ-Uwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hiragana" width="25" height="25"/>
+    </resources>
+</document>

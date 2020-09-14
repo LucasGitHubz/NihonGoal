@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QQq-TI-Gyf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ePQ-dD-uOt">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewControllersd" id="QQq-TI-Gyf" customClass="HomeViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLK-Za-nfA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-2P-I2Q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aU5-2P-I2Q" firstAttribute="top" secondItem="Gqi-q3-Mwq" secondAttribute="top" id="fNS-gq-Us6"/>
+                            <constraint firstItem="Gqi-q3-Mwq" firstAttribute="bottom" secondItem="aU5-2P-I2Q" secondAttribute="bottom" id="lKK-c7-M3W"/>
+                            <constraint firstItem="aU5-2P-I2Q" firstAttribute="leading" secondItem="Gqi-q3-Mwq" secondAttribute="leading" id="sd0-Qu-lPw"/>
+                            <constraint firstItem="Gqi-q3-Mwq" firstAttribute="trailing" secondItem="aU5-2P-I2Q" secondAttribute="trailing" id="xvD-Wo-1Gz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gqi-q3-Mwq"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="VVd-cH-11K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yxd-UG-enF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeBackgroundImage" width="1164" height="736"/>
+    </resources>
+</document>

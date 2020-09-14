@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" rowHeight="112" id="9W7-Wy-Yl5" customClass="KanaCell" customModule="NihonGoal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9W7-Wy-Yl5" id="JHR-tL-Es7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-3r-m7o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9h8-Yh-Ovx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Db-yg-jRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="83" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFH-V5-YhV" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvm-gq-SU8" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-E4-0mG">
+                                <rect key="frame" x="83" y="0.0" width="82.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="い" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-36-Oy9" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyb-vR-pvF" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="82.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uef-fu-edB">
+                                <rect key="frame" x="165.5" y="0.0" width="83" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="う" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a65-hH-CfR" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="u" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vso-xs-jFh" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pnd-4d-vfP">
+                                <rect key="frame" x="248.5" y="0.0" width="82.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="え" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFD-uw-ti8" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIP-I1-JJr" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="82.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="g67-AN-tdL">
+                                <rect key="frame" x="331" y="0.0" width="83" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIH-qv-pVM" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUp-8R-h2z" customClass="CustomConnexionLabel" customModule="NihonGoal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9h8-Yh-Ovx" firstAttribute="leading" secondItem="JHR-tL-Es7" secondAttribute="leading" id="AUN-9W-VrR"/>
+                    <constraint firstAttribute="trailing" secondItem="9h8-Yh-Ovx" secondAttribute="trailing" id="PO4-Gs-0sb"/>
+                    <constraint firstItem="9h8-Yh-Ovx" firstAttribute="top" secondItem="JHR-tL-Es7" secondAttribute="top" id="Sjg-Tm-KE7"/>
+                    <constraint firstAttribute="trailing" secondItem="8HT-3r-m7o" secondAttribute="trailing" id="czO-T3-qy4"/>
+                    <constraint firstItem="8HT-3r-m7o" firstAttribute="leading" secondItem="JHR-tL-Es7" secondAttribute="leading" id="dYx-Bf-jcp"/>
+                    <constraint firstAttribute="bottom" secondItem="9h8-Yh-Ovx" secondAttribute="bottom" id="fv4-gH-h57"/>
+                    <constraint firstAttribute="bottom" secondItem="8HT-3r-m7o" secondAttribute="bottom" id="jk1-hz-Cj4"/>
+                    <constraint firstItem="8HT-3r-m7o" firstAttribute="top" secondItem="JHR-tL-Es7" secondAttribute="top" id="zBj-aL-VbX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="background" destination="8HT-3r-m7o" id="UDU-AG-lYl"/>
+                <outletCollection property="kanaLabel" destination="QFH-V5-YhV" collectionClass="NSMutableArray" id="JUL-ic-12M"/>
+                <outletCollection property="kanaLabel" destination="9xQ-36-Oy9" collectionClass="NSMutableArray" id="tWg-s4-VmP"/>
+                <outletCollection property="kanaLabel" destination="a65-hH-CfR" collectionClass="NSMutableArray" id="8fN-7O-FD2"/>
+                <outletCollection property="kanaLabel" destination="wFD-uw-ti8" collectionClass="NSMutableArray" id="EEm-sS-gNh"/>
+                <outletCollection property="kanaLabel" destination="xIH-qv-pVM" collectionClass="NSMutableArray" id="RlL-GG-dqo"/>
+                <outletCollection property="letterLabel" destination="Mvm-gq-SU8" collectionClass="NSMutableArray" id="zoM-SQ-MbE"/>
+                <outletCollection property="letterLabel" destination="Hyb-vR-pvF" collectionClass="NSMutableArray" id="q1v-S1-I64"/>
+                <outletCollection property="letterLabel" destination="vso-xs-jFh" collectionClass="NSMutableArray" id="vYP-2e-2lY"/>
+                <outletCollection property="letterLabel" destination="GIP-I1-JJr" collectionClass="NSMutableArray" id="Rp7-i5-VmB"/>
+                <outletCollection property="letterLabel" destination="sUp-8R-h2z" collectionClass="NSMutableArray" id="u53-oM-lye"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="23"/>
+        </tableViewCell>
+    </objects>
+</document>

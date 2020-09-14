@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aUo-Ev-Vzy">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ConnexionViewController-->
+        <scene sceneID="dsM-HF-ZkH">
+            <objects>
+                <viewController storyboardIdentifier="ConnexionViewController" title="ConnexionViewController" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aUo-Ev-Vzy" customClass="ConnexionViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="adb-4b-IT8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connexionBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1dK-XP-IC5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-N6-Ccc" customClass="CustomConnexionButton" customModule="NihonGoal" customModuleProvider="target">
+                                <rect key="frame" x="25" y="423.5" width="270" height="44.5"/>
+                                <color key="backgroundColor" red="0.32965709138239324" green="0.88665211045269732" blue="0.99193829298019409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mSW-N6-Ccc" secondAttribute="height" multiplier="91:15" id="ebq-eN-K9M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="Se connecter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0vt-F7-Lqm" kind="presentation" modalPresentationStyle="fullScreen" id="pq8-L2-unP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-t3-Ebo" customClass="CustomConnexionButton" customModule="NihonGoal" customModuleProvider="target">
+                                <rect key="frame" x="40" y="493" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cIy-t3-Ebo" secondAttribute="height" multiplier="331:55" id="dP5-CK-W8b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="S'inscrire">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qA1-cy-Q84" kind="presentation" modalPresentationStyle="fullScreen" id="XqH-7W-czD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nihonGoal" translatesAutoresizingMaskIntoConstraints="NO" id="Gnc-aI-bpA" customClass="CustomHomeImageView" customModule="NihonGoal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="280" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gnc-aI-bpA" secondAttribute="height" multiplier="48:11" id="qoU-lJ-izZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UZ1-Qn-aRp" firstAttribute="trailing" secondItem="Gnc-aI-bpA" secondAttribute="trailing" constant="20" id="4sq-e9-Gkg"/>
+                            <constraint firstItem="1dK-XP-IC5" firstAttribute="top" secondItem="adb-4b-IT8" secondAttribute="top" id="5ns-hv-0nt"/>
+                            <constraint firstAttribute="bottom" secondItem="1dK-XP-IC5" secondAttribute="bottom" id="8dD-v8-gMU"/>
+                            <constraint firstItem="cIy-t3-Ebo" firstAttribute="leading" secondItem="UZ1-Qn-aRp" secondAttribute="leading" constant="40" id="97b-F1-dqg"/>
+                            <constraint firstItem="1dK-XP-IC5" firstAttribute="leading" secondItem="UZ1-Qn-aRp" secondAttribute="leading" id="DFT-Yl-U4u"/>
+                            <constraint firstItem="Gnc-aI-bpA" firstAttribute="top" secondItem="UZ1-Qn-aRp" secondAttribute="top" constant="20" id="IpJ-nh-f3x"/>
+                            <constraint firstItem="Gnc-aI-bpA" firstAttribute="leading" secondItem="UZ1-Qn-aRp" secondAttribute="leading" constant="20" id="O1z-v8-MPJ"/>
+                            <constraint firstItem="UZ1-Qn-aRp" firstAttribute="bottom" secondItem="cIy-t3-Ebo" secondAttribute="bottom" constant="35" id="OML-0d-DeB"/>
+                            <constraint firstItem="cIy-t3-Ebo" firstAttribute="top" secondItem="mSW-N6-Ccc" secondAttribute="bottom" constant="25" id="TK7-sU-b2u"/>
+                            <constraint firstItem="UZ1-Qn-aRp" firstAttribute="trailing" secondItem="cIy-t3-Ebo" secondAttribute="trailing" constant="40" id="cst-kz-08K"/>
+                            <constraint firstItem="UZ1-Qn-aRp" firstAttribute="trailing" secondItem="mSW-N6-Ccc" secondAttribute="trailing" constant="25" id="lip-lA-TJE"/>
+                            <constraint firstItem="1dK-XP-IC5" firstAttribute="trailing" secondItem="UZ1-Qn-aRp" secondAttribute="trailing" id="nhN-hE-Mtu"/>
+                            <constraint firstItem="mSW-N6-Ccc" firstAttribute="leading" secondItem="UZ1-Qn-aRp" secondAttribute="leading" constant="25" id="rMZ-Rc-0UG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UZ1-Qn-aRp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2gu-Jt-JUu"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfK-aa-Xlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35.625" y="101.40845070422536"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="umi-LG-xaP">
+            <objects>
+                <viewController modalPresentationStyle="formSheet" id="0vt-F7-Lqm" customClass="SignInViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UaO-bD-roE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-lX-Vcb" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="20" y="471" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.32965709139999999" green="0.88665211050000003" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3nQ-lX-Vcb" secondAttribute="height" multiplier="374:63" id="RQQ-Sf-Kwz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Connexion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapConnexionButton:" destination="0vt-F7-Lqm" eventType="touchUpInside" id="1jY-4Y-Vsc"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-gT-3H8">
+                                <rect key="frame" x="20" y="80" width="280" height="194"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-fF-xtl" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.32965709139999999" green="0.88665211050000003" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="0vt-F7-Lqm" id="pFA-pw-3Vf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7pR-ul-ZSK" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="137" width="280" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.32965709139999999" green="0.88665211050000003" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="0vt-F7-Lqm" id="cap-4d-osn"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K1M-gT-3H8" secondAttribute="height" multiplier="374:259" id="2Dt-NU-gFK"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-V8-fMg">
+                                <rect key="frame" x="10" y="10" width="74" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GqP-V8-fMg" secondAttribute="height" multiplier="7:4" id="ZGc-Iu-YHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Annuler">
+                                    <color key="titleColor" red="0.32965709139999999" green="0.88665211050000003" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancelButton:" destination="0vt-F7-Lqm" eventType="touchUpInside" id="NCi-Dt-XqR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Emy-BK-O8U" firstAttribute="trailing" secondItem="K1M-gT-3H8" secondAttribute="trailing" constant="20" id="2Qd-NE-v3w"/>
+                            <constraint firstItem="K1M-gT-3H8" firstAttribute="top" secondItem="Emy-BK-O8U" secondAttribute="top" constant="80" id="4XO-SM-WX6"/>
+                            <constraint firstItem="Emy-BK-O8U" firstAttribute="bottom" secondItem="3nQ-lX-Vcb" secondAttribute="bottom" constant="50" id="DpF-8W-w6M"/>
+                            <constraint firstItem="GqP-V8-fMg" firstAttribute="leading" secondItem="Emy-BK-O8U" secondAttribute="leading" constant="10" id="FpB-Dg-tZJ"/>
+                            <constraint firstItem="GqP-V8-fMg" firstAttribute="top" secondItem="Emy-BK-O8U" secondAttribute="top" constant="10" id="FtK-a6-yNC"/>
+                            <constraint firstItem="3nQ-lX-Vcb" firstAttribute="leading" secondItem="Emy-BK-O8U" secondAttribute="leading" constant="20" id="P7W-RE-PB4"/>
+                            <constraint firstItem="K1M-gT-3H8" firstAttribute="leading" secondItem="Emy-BK-O8U" secondAttribute="leading" constant="20" id="YFd-Z6-FLV"/>
+                            <constraint firstItem="Emy-BK-O8U" firstAttribute="trailing" secondItem="3nQ-lX-Vcb" secondAttribute="trailing" constant="20" id="bpL-fJ-QAr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Emy-BK-O8U"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="p08-OE-Qlk"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="emailTextField" destination="ecx-fF-xtl" id="bkp-XT-FVZ"/>
+                        <outlet property="navItem" destination="p08-OE-Qlk" id="55F-4P-fLF"/>
+                        <outlet property="passwordTextField" destination="7pR-ul-ZSK" id="LOJ-5y-uR3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEf-Jz-t5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137.68115942029" y="-256.47321428571428"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="zo8-Qr-qhe">
+            <objects>
+                <viewController modalPresentationStyle="formSheet" id="qA1-cy-Q84" customClass="SignUpViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdQ-3x-53c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-PI-QGp">
+                                <rect key="frame" x="20" y="40" width="280" height="342"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nek-jt-ixP" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="family-name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZjS-Ag-a5P" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="72.5" width="280" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Og4-eu-iiu" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="145" width="280" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tga-sn-lRt" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="217.5" width="280" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmer votre mot de passe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-8v-jjM" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="290" width="280" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fbx-PI-QGp" secondAttribute="height" multiplier="27:33" id="mte-Ni-dek"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWv-A4-xU2" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="20" y="471" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yWv-A4-xU2" secondAttribute="height" multiplier="280:47" id="jhE-MA-fhY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="S'inscrire">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSignUpButton:" destination="qA1-cy-Q84" eventType="touchUpInside" id="O11-8f-MRw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnS-6M-zp0">
+                                <rect key="frame" x="10" y="10" width="74.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wnS-6M-zp0" secondAttribute="height" multiplier="82:33" id="NNR-ig-5PJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Annuler">
+                                    <color key="titleColor" red="0.020624529570000001" green="0.37672621010000001" blue="0.5882643461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancelButton:" destination="qA1-cy-Q84" eventType="touchUpInside" id="BN8-08-dgt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="urn-Zh-fGt" firstAttribute="trailing" secondItem="fbx-PI-QGp" secondAttribute="trailing" constant="20" id="41Q-JH-T7r"/>
+                            <constraint firstItem="fbx-PI-QGp" firstAttribute="leading" secondItem="urn-Zh-fGt" secondAttribute="leading" constant="20" id="50P-eZ-es2"/>
+                            <constraint firstItem="fbx-PI-QGp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wnS-6M-zp0" secondAttribute="bottom" id="CBB-3j-5KY"/>
+                            <constraint firstItem="yWv-A4-xU2" firstAttribute="leading" secondItem="urn-Zh-fGt" secondAttribute="leading" constant="20" id="EKy-2I-8PK"/>
+                            <constraint firstItem="urn-Zh-fGt" firstAttribute="trailing" secondItem="yWv-A4-xU2" secondAttribute="trailing" constant="20" id="IqO-Qr-ptJ"/>
+                            <constraint firstItem="fbx-PI-QGp" firstAttribute="top" secondItem="urn-Zh-fGt" secondAttribute="top" constant="40" id="Lky-OR-2hI"/>
+                            <constraint firstItem="wnS-6M-zp0" firstAttribute="leading" secondItem="urn-Zh-fGt" secondAttribute="leading" constant="10" id="MZN-GN-o5d"/>
+                            <constraint firstItem="urn-Zh-fGt" firstAttribute="bottom" secondItem="yWv-A4-xU2" secondAttribute="bottom" constant="50" id="axj-2u-q5D"/>
+                            <constraint firstItem="wnS-6M-zp0" firstAttribute="top" secondItem="urn-Zh-fGt" secondAttribute="top" constant="10" id="zeG-S5-50K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="urn-Zh-fGt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gwt-CW-lta"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="pdR-8v-jjM" id="nRb-O4-8B2"/>
+                        <outlet property="emailTextField" destination="Og4-eu-iiu" id="b3h-TE-GHQ"/>
+                        <outlet property="firstNameTextField" destination="ZjS-Ag-a5P" id="S4v-JQ-Naa"/>
+                        <outlet property="nameTextField" destination="nek-jt-ixP" id="byW-Le-uCZ"/>
+                        <outlet property="navItem" destination="Gwt-CW-lta" id="Bz6-Jc-qWd"/>
+                        <outlet property="passwordTextField" destination="tga-sn-lRt" id="WCL-at-QnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGi-Hw-wXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.25" y="423.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="connexionBackground" width="1920" height="1080"/>
+        <image name="nihonGoal" width="862" height="289"/>
+    </resources>
+</document>

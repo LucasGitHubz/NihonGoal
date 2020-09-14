@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  NihonGoal
+
+  Created by kuroro on 13/09/2020.
+  Copyright © 2020 lucasam. All rights reserved.
+*/
+"Practice" = "S'entraîner";
+"Select all" = "Tout sélectionner";
+"Unselect all" = "Tout dé-selectionner";
+"Return" = "Retour";
+"Continue" = "Continuer";
+"Select columns" = "Sélectionne les colonnes pour l'exercice";
+"Fundamental characters" = "Caractères fondamentaux";
+"Derivatives" = "Dérivés";
+"Diphthongs" = "Diphtongues";
+"Derivatives + Diphthongs" = "Dérivés + Diphtongues";
+"Worst score" = "Super score tu es vraiment incroyable ! Non j'déconne, tu ferais mieux d'aller réviser parce que là c'est vraiment trop la honte...";
+"Bad score" = "Ouch ! Dur à voir mais au moins t'as pas eu zéro... Bon si j'étais toi, je retournai quand même TRES VITE REVISER !";
+"Ok score" = "Mouais pas mal t'as sauvé les meubles quoi... Enfin t'es quand même pas passé(e) loin d'une super note alors n'abandonne pas !";
+"Good score" = "Très bon score bravo ! Encore un petit effort et tu seras au top !";
+"Max score" = "Félicitations tu as obtenu la note maximale ! Tu connais les kanas comme ta poche et tu es prêt(e) à les utiliser !";

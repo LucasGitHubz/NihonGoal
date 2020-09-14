@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  NihonGoal
+
+  Created by kuroro on 13/09/2020.
+  Copyright © 2020 lucasam. All rights reserved.
+*/
+"Practice" = "Practice";
+"Select all" = "Select all";
+"Unselect all" = "Unselect all";
+"Return" = "Return";
+"Continue" = "Continue";
+"Select columns" = "Select columns for the exercise";
+"Fundamental characters" = "Fundamental characters";
+"Derivatives" = "Derivates";
+"Diphthongs" = "Diphthongs";
+"Derivatives + Diphthongs" = "Derivatives + Diphthongs";
+"Worst score" = "Great score you are really amazing! No I'm kidding, you better return study because this is really too shameful ...";
+"Bad score" = "Ouch ! hard to see that but at least you didn't get 0... Well if I were you, I went back VERY QUICKLY TO REVISE !";
+"Ok score" = "Yeah not bad you got it but... You still did not pass far from a great note so don't give up !";
+"Good score" = "Very good score, well done ! One more little effort and you'll be perfect !";
+"Max score" = "Congratulations you got the max score ! You know kanas like the back of your hand and you are ready to use them !";
+"Average time" = "Average time"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JUm-Od-g8x">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="rAD-Ki-DFl">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="JUm-Od-g8x" customClass="SplashViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XgI-Re-0IQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-db-4EC">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X6B-db-4EC" firstAttribute="centerY" secondItem="XgI-Re-0IQ" secondAttribute="centerY" id="wS6-bk-Grt"/>
+                            <constraint firstItem="X6B-db-4EC" firstAttribute="centerX" secondItem="XgI-Re-0IQ" secondAttribute="centerX" id="x4w-82-f7L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iWt-JF-bgM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rI-Bs-kV4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0B-uI-rPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-38"/>
+        </scene>
+    </scenes>
+</document>
