@@ -91,7 +91,7 @@ extension KatakanaSelectionViewController: UITableViewDataSource, UITableViewDel
         }
     }
     
-    private func deleteRowToTab(indexPath: Int, section: Int) {
+    private func deleteRowFromTab(indexPath: Int, section: Int) {
         switch section {
         case 0:
             delegate?.deleteRowFromTabs(kanas: kana.katakanaTab[indexPath])
@@ -111,7 +111,7 @@ extension KatakanaSelectionViewController: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        deleteRowToTab(indexPath: indexPath.row, section: indexPath.section)
+        deleteRowFromTab(indexPath: indexPath.row, section: indexPath.section)
     }
     
     func setSections() {

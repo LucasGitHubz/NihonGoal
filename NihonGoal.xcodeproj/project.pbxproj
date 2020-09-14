@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		697671126F6584BCAEA2EBF1 /* Pods_NihonGoalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86A476CCBA8952A03CA6AC /* Pods_NihonGoalTests.framework */; };
 		7E04271C633285035995FCC2 /* Pods_NihonGoal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9273B3EB2907C5AD963C5471 /* Pods_NihonGoal.framework */; };
+		C60524CB250F61E3004CEBAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */; };
 		C60F6B2A2502A0F900E9A0CB /* KanaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60F6B292502A0F900E9A0CB /* KanaCell.xib */; };
 		C60F6B2C2502DD2400E9A0CB /* KanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F6B2B2502DD2400E9A0CB /* KanaCell.swift */; };
 		C620CD762506599300B06DD0 /* BubbleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C620CD752506599300B06DD0 /* BubbleViewController.storyboard */; };
@@ -88,6 +89,8 @@
 		9273B3EB2907C5AD963C5471 /* Pods_NihonGoal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NihonGoal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6564A17FF39BF7E91C6631E /* Pods-NihonGoal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NihonGoal.release.xcconfig"; path = "Target Support Files/Pods-NihonGoal/Pods-NihonGoal.release.xcconfig"; sourceTree = "<group>"; };
 		AA86A476CCBA8952A03CA6AC /* Pods_NihonGoalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NihonGoalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Plist and key/NihonGoal/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C60524CC250F61EB004CEBAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C60F6B292502A0F900E9A0CB /* KanaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanaCell.xib; sourceTree = "<group>"; };
 		C60F6B2B2502DD2400E9A0CB /* KanaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaCell.swift; sourceTree = "<group>"; };
 		C620CD752506599300B06DD0 /* BubbleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BubbleViewController.storyboard; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 				C6606D672508D4F2002017BA /* KatakanaSelectionViewController.swift */,
 				C6A2C9B12507C494002F7DA7 /* ExerciseViewController.swift */,
 				C6E55F102507DDC000BD63FF /* ExerciseModeViewController.swift */,
+				C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */,
 				C6606D69250994CB002017BA /* ResultViewController.swift */,
 			);
 			path = Practice;
@@ -260,6 +264,7 @@
 				C6962C9B24FEA5BF00CC95FA /* Assets.xcassets */,
 				C6962C9D24FEA5BF00CC95FA /* LaunchScreen.storyboard */,
 				C6962CA024FEA5BF00CC95FA /* Info.plist */,
+				C60524CC250F61EB004CEBAC /* GoogleService-Info.plist */,
 				C6539761250E431A009B32F8 /* Localizable.strings */,
 			);
 			path = NihonGoal;
@@ -578,6 +583,7 @@
 				C64DDA832505280D002E6A45 /* PracticeNavigationController.storyboard in Resources */,
 				C6D504D3250264A000360D1F /* KatakanaViewController.storyboard in Resources */,
 				C6E77CCC24FFB7F300C69153 /* ConnexionViewController.storyboard in Resources */,
+				C60524CB250F61E3004CEBAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

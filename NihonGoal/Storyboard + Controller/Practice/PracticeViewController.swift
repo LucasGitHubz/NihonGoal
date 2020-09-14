@@ -109,18 +109,23 @@ extension PracticeViewController: ExerciseDelegateProtocol {
         guard kanaTab.count != 27 else {
             return
         }
-
+        
         guard kanaTab.count > 0 else {
             kanaTab.append(kanas)
             letterTab.append(letters)
+            print("0 \(kanaTab)")
+            return
+        }
+        
+        for index in 0...kanaTab.count - 1 where kanaTab[index] == kanas {
+            print("same \(kanaTab)")
             return
         }
 
-        for index in 0...kanaTab.count - 1 where kanaTab[index] != kanas {
-            kanaTab.append(kanas)
-            letterTab.append(letters)
-            return
-        }
+        kanaTab.append(kanas)
+        letterTab.append(letters)
+        print(kanaTab)
+        print(kanaTab.count)
     }
 
     func deleteRowFromTabs(kanas: [String]) {
@@ -131,6 +136,7 @@ extension PracticeViewController: ExerciseDelegateProtocol {
         for index in 0...kanaTab.count - 1 where kanaTab[index] == kanas {
             kanaTab.remove(at: index)
             letterTab.remove(at: index)
+            print(kanaTab)
             return
         }
     }
