@@ -15,8 +15,8 @@
 * iOS 11.0
 
 * Language: 
-     - French(only)
-     - English coming soon
+     - French
+     - English
 
 ## Installation
 1. Download this project or fork it.
