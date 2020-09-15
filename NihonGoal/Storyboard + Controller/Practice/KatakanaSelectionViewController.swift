@@ -13,6 +13,11 @@ class KatakanaSelectionViewController: UIViewController, StoryboardBased {
     // MARK: IBOutlets
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var returnButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var selectRowLabel: UILabel!
+    @IBOutlet weak var unselectButton: UIButton!
+    @IBOutlet weak var selectButton: UIButton!
     
     // MARK: Properties
     private var sections = [KanaDatasType]()
@@ -22,10 +27,20 @@ class KatakanaSelectionViewController: UIViewController, StoryboardBased {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setLocalizedString()
         setSections()
         backgroundView.setGradient(firstColor: #colorLiteral(red: 1, green: 0.690285027, blue: 0.402682364, alpha: 1), secondColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), rounded: false)
         tableView.backgroundColor = .clear
+    }
+
+    // MARK: Methods
+    func setLocalizedString() {
+        returnButton.setTitle("Return".localizedString(), for: .normal)
+        continueButton.setTitle("Continue".localizedString(), for: .normal)
+        selectRowLabel.text = "Select rows".localizedString()
+        unselectButton.setTitle("Unselect all".localizedString(), for: .normal)
+        selectButton.setTitle("Select all".localizedString(), for: .normal)
     }
     
     // MARK: IBActions
@@ -115,10 +130,10 @@ extension KatakanaSelectionViewController: UITableViewDataSource, UITableViewDel
     }
     
     func setSections() {
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Fundamental characters", comment: ""), kanaTab: kana.katakanaTab, letterTab: kana.letterTab))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives", comment: ""), kanaTab: kana.katakanaDerives, letterTab: kana.letterDerives))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Diphthongs", comment: ""), kanaTab: kana.katakanaDiphtongues, letterTab: kana.letterDiphtongues))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives + Diphthongs", comment: ""), kanaTab: kana.katakanaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
+        sections.append(KanaDatasType.init(title: "Fundamental characters".localizedString(), kanaTab: kana.katakanaTab, letterTab: kana.letterTab))
+        sections.append(KanaDatasType.init(title: "Derivatives".localizedString(), kanaTab: kana.katakanaDerives, letterTab: kana.letterDerives))
+        sections.append(KanaDatasType.init(title: "Diphthongs".localizedString(), kanaTab: kana.katakanaDiphtongues, letterTab: kana.letterDiphtongues))
+        sections.append(KanaDatasType.init(title: "Derivatives + Diphthongs".localizedString(), kanaTab: kana.katakanaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

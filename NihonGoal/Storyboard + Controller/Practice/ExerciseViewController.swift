@@ -16,7 +16,9 @@ enum Direction {
 class ExerciseViewController: UIViewController, StoryboardBased {
     // MARK: IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var zenButton: CustomPracticeButton!
+    @IBOutlet weak var fastButton: CustomPracticeButton!
+    
     // MARK: Properties
     private let kana = Kana()
     private var fullAnswersTab = [String]()
@@ -44,6 +46,9 @@ class ExerciseViewController: UIViewController, StoryboardBased {
 
     // MARK: Methods
     func setInterface() {
+        zenButton.setTitle("Zen".localizedString(), for: .normal)
+        fastButton.setTitle("Fast".localizedString(), for: .normal)
+
         switch buttonTag {
         case 1:
             titleLabel.text = "あ → a"

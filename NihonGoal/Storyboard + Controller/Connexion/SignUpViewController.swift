@@ -12,17 +12,34 @@ import TransitionButton
 
 class SignUpViewController: UIViewController {
     // MARK: IBOutlets
-    @IBOutlet weak var navItem: UINavigationItem!
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var nameTextField: HoshiTextField!
     @IBOutlet weak var firstNameTextField: HoshiTextField!
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var passwordTextField: HoshiTextField!
     @IBOutlet weak var confirmPasswordTextField: HoshiTextField!
-
+    @IBOutlet weak var signUpButton: TransitionButton!
+    
     // MARK: Properties
     private let userController = UserController()
 
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        
+    }
+
     // MARK: Methods
+    func setLocalizedString() {
+        cancelButton.setTitle("Cancel".localizedString(), for: .normal)
+        nameTextField.placeholder = "Last name".localizedString()
+        firstNameTextField.placeholder = "First name".localizedString()
+        passwordTextField.placeholder = "Password".localizedString()
+        confirmPasswordTextField.placeholder = "Confirm".localizedString()
+        signUpButton.setTitle("Sign up".localizedString(), for: .normal)
+    }
+
     func isPasswordValid(_ password: String) -> Bool{
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)

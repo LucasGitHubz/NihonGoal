@@ -9,15 +9,16 @@
 import UIKit
 
 struct CongratulationSentence {
-    let worstScore = NSLocalizedString("Worst score", comment: "")
-    let badScore = NSLocalizedString("Bad score", comment: "")
-    let okScore = NSLocalizedString("Ok score", comment: "")
-    let goodScore = NSLocalizedString("Good score", comment: "")
-    let maxScore = NSLocalizedString("Max score", comment: "")
+    let worstScore = "Worst score".localizedString()
+    let badScore = "Bad score".localizedString()
+    let okScore = "Ok score".localizedString()
+    let goodScore = "Good score".localizedString()
+    let maxScore = "Max score".localizedString()
 }
 
 class ResultViewController: UIViewController {
     // MARK: IBOutlets
+    @IBOutlet weak var exerciseOverLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var averageTimeLabel: UILabel!
     @IBOutlet weak var congratzLabel: UILabel!
@@ -35,6 +36,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        exerciseOverLabel.text = "Exercise over".localizedString()
         animateScoreLabelByLaunchingTimer()
     }
 
@@ -71,11 +73,11 @@ class ResultViewController: UIViewController {
         time += 0.01
         
         if String(format: "%.2f", time) == String(format: "%.2f", averageTime) {
-            averageTimeLabel.text = "Temps moyen par réponse = \(String(format: "%.2f", time))s"
+            averageTimeLabel.text = "Average time".localizedString() +  "\(String(format: "%.2f", time))s"
             timer.invalidate()
             animateCongratzLabel(sentence: pullOutCongratzSentence())
         } else {
-            averageTimeLabel.text = "Temps moyen par réponse = \(String(format: "%.2f", time))s"
+            averageTimeLabel.text = "Average time".localizedString() +  "\(String(format: "%.2f", time))s"
         }
     }
 

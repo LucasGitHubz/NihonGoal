@@ -10,4 +10,11 @@ import UIKit
 import Reusable
 
 class TabBarController: UITabBarController, StoryboardBased {
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        viewControllers?[3].tabBarItem.title = "Practice".localizedString()
+        viewControllers?[4].tabBarItem.title = "Profile".localizedString()
+    }
 }

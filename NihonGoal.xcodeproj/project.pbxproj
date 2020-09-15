@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		697671126F6584BCAEA2EBF1 /* Pods_NihonGoalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86A476CCBA8952A03CA6AC /* Pods_NihonGoalTests.framework */; };
 		7E04271C633285035995FCC2 /* Pods_NihonGoal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9273B3EB2907C5AD963C5471 /* Pods_NihonGoal.framework */; };
-		C60524CB250F61E3004CEBAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */; };
 		C60F6B2A2502A0F900E9A0CB /* KanaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60F6B292502A0F900E9A0CB /* KanaCell.xib */; };
 		C60F6B2C2502DD2400E9A0CB /* KanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F6B2B2502DD2400E9A0CB /* KanaCell.swift */; };
 		C620CD762506599300B06DD0 /* BubbleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C620CD752506599300B06DD0 /* BubbleViewController.storyboard */; };
@@ -37,6 +36,7 @@
 		C6BED3EB2502429200BB34E4 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BED3EA2502429200BB34E4 /* ProfilViewController.swift */; };
 		C6BED3ED2502455000BB34E4 /* CustomHomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BED3EC2502455000BB34E4 /* CustomHomeImageView.swift */; };
 		C6BED3EF25025BAE00BB34E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BED3EE25025BAE00BB34E4 /* UIView+extension.swift */; };
+		C6D018552510DCED00C2A949 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D018542510DCED00C2A949 /* String+extension.swift */; };
 		C6D504D12502649400360D1F /* HiraganaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D504D02502649400360D1F /* HiraganaViewController.storyboard */; };
 		C6D504D3250264A000360D1F /* KatakanaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D504D2250264A000360D1F /* KatakanaViewController.storyboard */; };
 		C6D504D52502650C00360D1F /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D504D42502650C00360D1F /* HiraganaViewController.swift */; };
@@ -89,8 +89,6 @@
 		9273B3EB2907C5AD963C5471 /* Pods_NihonGoal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NihonGoal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6564A17FF39BF7E91C6631E /* Pods-NihonGoal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NihonGoal.release.xcconfig"; path = "Target Support Files/Pods-NihonGoal/Pods-NihonGoal.release.xcconfig"; sourceTree = "<group>"; };
 		AA86A476CCBA8952A03CA6AC /* Pods_NihonGoalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NihonGoalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Plist and key/NihonGoal/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C60524CC250F61EB004CEBAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C60F6B292502A0F900E9A0CB /* KanaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanaCell.xib; sourceTree = "<group>"; };
 		C60F6B2B2502DD2400E9A0CB /* KanaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaCell.swift; sourceTree = "<group>"; };
 		C620CD752506599300B06DD0 /* BubbleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BubbleViewController.storyboard; sourceTree = "<group>"; };
@@ -127,6 +125,7 @@
 		C6BED3EA2502429200BB34E4 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		C6BED3EC2502455000BB34E4 /* CustomHomeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeImageView.swift; sourceTree = "<group>"; };
 		C6BED3EE25025BAE00BB34E4 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		C6D018542510DCED00C2A949 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		C6D504D02502649400360D1F /* HiraganaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HiraganaViewController.storyboard; sourceTree = "<group>"; };
 		C6D504D2250264A000360D1F /* KatakanaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KatakanaViewController.storyboard; sourceTree = "<group>"; };
 		C6D504D42502650C00360D1F /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
@@ -221,7 +220,6 @@
 				C6606D672508D4F2002017BA /* KatakanaSelectionViewController.swift */,
 				C6A2C9B12507C494002F7DA7 /* ExerciseViewController.swift */,
 				C6E55F102507DDC000BD63FF /* ExerciseModeViewController.swift */,
-				C60524CA250F61E3004CEBAC /* GoogleService-Info.plist */,
 				C6606D69250994CB002017BA /* ResultViewController.swift */,
 			);
 			path = Practice;
@@ -264,7 +262,6 @@
 				C6962C9B24FEA5BF00CC95FA /* Assets.xcassets */,
 				C6962C9D24FEA5BF00CC95FA /* LaunchScreen.storyboard */,
 				C6962CA024FEA5BF00CC95FA /* Info.plist */,
-				C60524CC250F61EB004CEBAC /* GoogleService-Info.plist */,
 				C6539761250E431A009B32F8 /* Localizable.strings */,
 			);
 			path = NihonGoal;
@@ -446,6 +443,7 @@
 				C6E77CE624FFD39700C69153 /* UINavigationBar+extension.swift */,
 				C6BED3EE25025BAE00BB34E4 /* UIView+extension.swift */,
 				C6D5FCD2250C0510001751BD /* UIImageView+extension.swift */,
+				C6D018542510DCED00C2A949 /* String+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -583,7 +581,6 @@
 				C64DDA832505280D002E6A45 /* PracticeNavigationController.storyboard in Resources */,
 				C6D504D3250264A000360D1F /* KatakanaViewController.storyboard in Resources */,
 				C6E77CCC24FFB7F300C69153 /* ConnexionViewController.storyboard in Resources */,
-				C60524CB250F61E3004CEBAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +751,7 @@
 				C6606D662508D4EA002017BA /* HiraganaSelectionViewController.swift in Sources */,
 				C6E77CE124FFC9E200C69153 /* CustomConnexionLabel.swift in Sources */,
 				C6BED3EF25025BAE00BB34E4 /* UIView+extension.swift in Sources */,
+				C6D018552510DCED00C2A949 /* String+extension.swift in Sources */,
 				C6A2C9A92507BD04002F7DA7 /* CustomPracticeButton.swift in Sources */,
 				C6DC9F8524FFEE830087B582 /* UserController.swift in Sources */,
 				C6D5FCD3250C0510001751BD /* UIImageView+extension.swift in Sources */,

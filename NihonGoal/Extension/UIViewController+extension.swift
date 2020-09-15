@@ -12,17 +12,17 @@ extension UIViewController {
 // MARK: AlertGestion
     struct AlertMessage {
         // Program or Internet errors
-        let programError = "L'application a rencontré une erreur inconnue. Veuillez la redémarrer."
-        let errorInternet = "Vérifiez que votre connexion internet est bien active, puis recommencez."
+        let programError = "ProgramErr".localizedString()
+        let errorInternet = "InternetErr".localizedString()
 
         // Connexion error
-        let loginTextFieldsEmpty = "Veuillez saisir votre e-mail ainsi que votre mot de passe avant de continuer."
+        let loginTextFieldsEmpty = "LogTextField".localizedString()
 
         // Reset password alert
-        let resetMessage = "Un mail de réinitialisation a été envoyé sur votre adresse mail !"
+        let resetMessage = "ResetMessage".localizedString()
 
         // Practice section error
-        let didntChoose = "Veuillez sélectionner au moins une colonne avant de continuer"
+        let didntChoose = "Didnt choose".localizedString()
     }
 
     func presentAlert(message: String, title: String) {

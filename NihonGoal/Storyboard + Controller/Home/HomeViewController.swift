@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, StoryboardBased {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        practiceButton.setTitle(NSLocalizedString("Practice", comment: ""), for: .normal)
+        practiceButton.setTitle("Practice".localizedString(), for: .normal)
         bubbleImageTab = [hiraganaBubble, katakanaBubble, practiceBubble]
         
         initialHeightTab = bubbleImageTab.compactMap({ $0.frame.size.height })

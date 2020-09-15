@@ -11,7 +11,7 @@
         <!--ConnexionViewController-->
         <scene sceneID="dsM-HF-ZkH">
             <objects>
-                <viewController storyboardIdentifier="ConnexionViewController" title="ConnexionViewController" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aUo-Ev-Vzy" customClass="ConnexionViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConnexionViewController" title="ConnexionViewController" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aUo-Ev-Vzy" customClass="ConnectionViewController" customModule="NihonGoal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="adb-4b-IT8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +72,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UZ1-Qn-aRp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2gu-Jt-JUu"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="signInButton" destination="mSW-N6-Ccc" id="H7j-PE-XI5"/>
+                        <outlet property="signUpButton" destination="cIy-t3-Ebo" id="OWD-E0-b6w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfK-aa-Xlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,15 +197,15 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="p08-OE-Qlk"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="cancelButton" destination="GqP-V8-fMg" id="X06-od-cgo"/>
                         <outlet property="emailTextField" destination="ecx-fF-xtl" id="bkp-XT-FVZ"/>
-                        <outlet property="navItem" destination="p08-OE-Qlk" id="55F-4P-fLF"/>
                         <outlet property="passwordTextField" destination="7pR-ul-ZSK" id="LOJ-5y-uR3"/>
+                        <outlet property="signInButton" destination="3nQ-lX-Vcb" id="3AL-hp-Qtf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEf-Jz-t5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -370,14 +373,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="urn-Zh-fGt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gwt-CW-lta"/>
                     <connections>
+                        <outlet property="cancelButton" destination="wnS-6M-zp0" id="sqM-Hh-y2G"/>
                         <outlet property="confirmPasswordTextField" destination="pdR-8v-jjM" id="nRb-O4-8B2"/>
                         <outlet property="emailTextField" destination="Og4-eu-iiu" id="b3h-TE-GHQ"/>
                         <outlet property="firstNameTextField" destination="ZjS-Ag-a5P" id="S4v-JQ-Naa"/>
                         <outlet property="nameTextField" destination="nek-jt-ixP" id="byW-Le-uCZ"/>
-                        <outlet property="navItem" destination="Gwt-CW-lta" id="Bz6-Jc-qWd"/>
                         <outlet property="passwordTextField" destination="tga-sn-lRt" id="WCL-at-QnV"/>
+                        <outlet property="signUpButton" destination="yWv-A4-xU2" id="6er-5x-cFG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGi-Hw-wXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

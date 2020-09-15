@@ -35,10 +35,10 @@ class KatakanaViewController: UIViewController, StoryboardBased {
 // MARK: TableView gestion
 extension KatakanaViewController: UITableViewDataSource, UITableViewDelegate {
     func setSections() {
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Fundamental characters", comment: ""), kanaTab: kana.katakanaTab, letterTab: kana.letterTab))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives", comment: ""), kanaTab: kana.katakanaDerives, letterTab: kana.letterDerives))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Diphthongs", comment: ""), kanaTab: kana.katakanaDiphtongues, letterTab: kana.letterDiphtongues))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives + Diphthongs", comment: ""), kanaTab: kana.katakanaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
+        sections.append(KanaDatasType.init(title: "Fundamental characters".localizedString(), kanaTab: kana.katakanaTab, letterTab: kana.letterTab))
+        sections.append(KanaDatasType.init(title: "Derivatives".localizedString(), kanaTab: kana.katakanaDerives, letterTab: kana.letterDerives))
+        sections.append(KanaDatasType.init(title: "Diphthongs".localizedString(), kanaTab: kana.katakanaDiphtongues, letterTab: kana.letterDiphtongues))
+        sections.append(KanaDatasType.init(title: "Derivatives + Diphthongs".localizedString(), kanaTab: kana.katakanaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

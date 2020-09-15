@@ -249,6 +249,10 @@
                         <outlet property="helloLabel" destination="pr5-yJ-nsN" id="hty-AZ-rYv"/>
                         <outlet property="hiraganaLabel" destination="aZZ-Vw-Ngb" id="I97-3n-YIr"/>
                         <outlet property="katakanaLabel" destination="c5t-gr-rbo" id="q9V-G7-6JZ"/>
+                        <outlet property="masteringLabel" destination="eaO-9t-nOs" id="hk7-Sl-sgB"/>
+                        <outlet property="progressLabel" destination="Z1C-BE-BXo" id="45M-eO-hWM"/>
+                        <outlet property="resetLabel" destination="k4o-6H-6u6" id="sUk-dm-buV"/>
+                        <outlet property="signOutLabel" destination="c6P-Jl-FuH" id="QRS-hQ-PPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wG9-cw-hJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

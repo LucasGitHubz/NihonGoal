@@ -35,10 +35,10 @@ class HiraganaViewController: UIViewController, StoryboardBased {
 // MARK: TableView gestion
 extension HiraganaViewController: UITableViewDataSource, UITableViewDelegate {
     func setSections() {
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Fundamental characters", comment: ""), kanaTab: kana.hiraganaTab, letterTab: kana.letterTab))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives", comment: ""), kanaTab: kana.hiraganaDerives, letterTab: kana.letterDerives))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Diphthongs", comment: ""), kanaTab: kana.hiraganaDiphtongues, letterTab: kana.letterDiphtongues))
-        sections.append(KanaDatasType.init(title: NSLocalizedString("Derivatives + Diphthongs", comment: ""), kanaTab: kana.hiraganaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
+        sections.append(KanaDatasType.init(title: "Fundamental characters".localizedString(), kanaTab: kana.hiraganaTab, letterTab: kana.letterTab))
+        sections.append(KanaDatasType.init(title: "Derivatives".localizedString(), kanaTab: kana.hiraganaDerives, letterTab: kana.letterDerives))
+        sections.append(KanaDatasType.init(title: "Diphthongs".localizedString(), kanaTab: kana.hiraganaDiphtongues, letterTab: kana.letterDiphtongues))
+        sections.append(KanaDatasType.init(title: "Derivatives + Diphthongs".localizedString(), kanaTab: kana.hiraganaDerivesDiphtongues, letterTab: kana.letterDerivesDiphtongues))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

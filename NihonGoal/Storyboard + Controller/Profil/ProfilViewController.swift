@@ -13,7 +13,12 @@ import FirebaseFirestore
 
 class ProfilViewController: UIViewController, StoryboardBased {
     // MARK: IBOutlets
+    @IBOutlet weak var barItem: UITabBarItem!
     @IBOutlet weak var helloLabel: CustomConnexionLabel!
+    @IBOutlet weak var progressLabel: CustomConnexionLabel!
+    @IBOutlet weak var masteringLabel: CustomConnexionLabel!
+    @IBOutlet weak var resetLabel: CustomConnexionLabel!
+    @IBOutlet weak var signOutLabel: CustomConnexionLabel!
     @IBOutlet weak var hiraganaLabel: UILabel!
     @IBOutlet weak var katakanaLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -21,7 +26,6 @@ class ProfilViewController: UIViewController, StoryboardBased {
     // MARK: Properties
     private lazy var loadingController = LoadingViewController()
     private let userController = UserController()
-    private let profilRows = ["Nos réseaux", "Réinitialiser mon mot de passe", "Se déconnecter"]
     private var name = String()
     private var hiraganaTab = [String]()
     private var katakanaTab = [String]()
@@ -30,6 +34,7 @@ class ProfilViewController: UIViewController, StoryboardBased {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setLocalizedString()
         backgroundImage.blurImage()
         getDocument()
     }
@@ -41,6 +46,13 @@ class ProfilViewController: UIViewController, StoryboardBased {
     }
 
     // MARK: Methods
+    func setLocalizedString() {
+        progressLabel.text = "Progress".localizedString()
+        masteringLabel.text = "Mastering".localizedString()
+        resetLabel.text = "Reset".localizedString()
+        signOutLabel.text = "Sign out".localizedString()
+    }
+
     private func getDocument() {
         add(loadingController)
         userController.getUser { (result) in
@@ -68,10 +80,10 @@ class ProfilViewController: UIViewController, StoryboardBased {
             DispatchQueue.main.async {
                 if success {
                     self.loadingController.remove()
-                    self.presentAlert(message: AlertMessage().resetMessage, title: "Réinitialisation")
+                    self.presentAlert(message: AlertMessage().resetMessage, title: "Reset message".localizedString())
                 } else {
                     self.loadingController.remove()
-                    self.presentAlert(message: AlertMessage().errorInternet, title: "Une erreur est survenue !")
+                    self.presentAlert(message: AlertMessage().errorInternet, title: "Error message".localizedString())
                 }
             }
         }

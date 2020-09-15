@@ -11,14 +11,28 @@ import TextFieldEffects
 import TransitionButton
 
 class SignInViewController: UIViewController {
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var signInButton: TransitionButton!
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var passwordTextField: HoshiTextField!
     
     // MARK: Properties
     private let userController = UserController()
+
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setLocalizedString()
+    }
     
     // MARK: Methods
+    func setLocalizedString() {
+        cancelButton.setTitle("Cancel".localizedString(), for: .normal)
+        passwordTextField.placeholder = "Password".localizedString()
+        signInButton.setTitle("Sign in".localizedString(), for: .normal)
+    }
     private func checkIfTextFieldsAreNotEmpty(_ email: String, _ password: String) -> Bool {
         if email == "" || password == "" {
             return false

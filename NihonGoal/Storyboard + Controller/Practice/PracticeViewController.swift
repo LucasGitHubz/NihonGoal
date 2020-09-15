@@ -32,16 +32,17 @@ class PracticeViewController: UIViewController, StoryboardBased {
     private var typeOfKana: TypeOfKana = .hiragana
     
     // MARK: Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        navItem.title = NSLocalizedString("Practice", comment: "")
-    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        setLocalizedString()
         kanaTab.removeAll()
         letterTab.removeAll()
+    }
+
+    // MARK: Methods
+    func setLocalizedString() {
+        navItem.title = "Practice".localizedString()
     }
     
     // MARK: IBActions

@@ -136,7 +136,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XhJ-by-gFO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="S'exercer" image="book" id="aSX-Qk-rj9"/>
+                    <tabBarItem key="tabBarItem" title="" image="book" id="aSX-Qk-rj9"/>
                     <navigationItem key="navigationItem" title="S'exercer" id="cW7-Iz-Edf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <userDefinedRuntimeAttributes>
@@ -226,7 +226,9 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="fastButton" destination="KIe-P8-9vr" id="Qqn-jg-4Ma"/>
                         <outlet property="titleLabel" destination="sEo-pC-HXq" id="wg5-XB-14u"/>
+                        <outlet property="zenButton" destination="HeS-Vm-njD" id="eV2-wB-3MI"/>
                         <segue destination="6Y5-TC-aUk" kind="show" identifier="segueToExercise" id="dAt-fj-j9p"/>
                     </connections>
                 </viewController>
@@ -456,6 +458,7 @@
                     <connections>
                         <outlet property="averageTimeLabel" destination="OZl-45-jAr" id="REK-YA-tk3"/>
                         <outlet property="congratzLabel" destination="Wfa-kZ-6I6" id="gFR-Rs-Zvu"/>
+                        <outlet property="exerciseOverLabel" destination="lNl-wg-1aj" id="xh5-f0-HDO"/>
                         <outlet property="scoreLabel" destination="RhB-mM-bEz" id="XV2-Lp-xRH"/>
                         <segue destination="QGV-rC-ul0" kind="unwind" identifier="segueToMenu" unwindAction="unwindToPracticeWithSegue:" id="0E2-fh-vo0"/>
                     </connections>
@@ -577,7 +580,12 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="backgroundView" destination="aAs-3f-fN3" id="Bo8-WS-hjH"/>
+                        <outlet property="continueButton" destination="2Jb-th-i3E" id="rTh-QB-6Y7"/>
+                        <outlet property="returnButton" destination="Iii-b6-eAn" id="xLG-9f-dg7"/>
+                        <outlet property="selectButton" destination="CeC-k8-ffQ" id="xF8-bT-ue0"/>
+                        <outlet property="selectRowLabel" destination="0CD-nv-sUP" id="yQl-u2-2Ss"/>
                         <outlet property="tableView" destination="qgS-gW-iCF" id="WOr-DF-m0b"/>
+                        <outlet property="unselectButton" destination="nj2-ri-iAu" id="zBa-cA-WtM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nE-VR-oiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -700,7 +708,12 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="backgroundView" destination="oWe-AY-ZO3" id="Nbh-We-Csq"/>
+                        <outlet property="continueButton" destination="hge-5d-wFh" id="e3D-Of-NMi"/>
+                        <outlet property="returnButton" destination="g2R-5o-b2W" id="VQL-aX-5cU"/>
+                        <outlet property="selectButton" destination="4xf-sP-6yu" id="wA3-uC-qxQ"/>
+                        <outlet property="selectRowLabel" destination="C2i-2x-dnV" id="YW4-MD-CCY"/>
                         <outlet property="tableView" destination="eS8-aa-261" id="0BV-Fk-zvX"/>
+                        <outlet property="unselectButton" destination="gJY-4S-o5A" id="J9m-PP-CSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDl-H1-8CX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class SplashViewController: UIViewController {
-    private let connexionVC = ConnexionViewController.instantiate()
+    private let connexionVC = ConnectionViewController.instantiate()
     private let tabBarVC = TabBarController.instantiate()
     
     override func viewDidLoad() {
@@ -22,8 +22,10 @@ class SplashViewController: UIViewController {
     func listenAuthState() {
         Auth.auth().addStateDidChangeListener { auth, user in
             if user != nil {
+                self.connexionVC.remove()
                 self.add(self.tabBarVC)
             } else {
+                self.tabBarVC.remove()
                 self.add(self.connexionVC)
             }
         }

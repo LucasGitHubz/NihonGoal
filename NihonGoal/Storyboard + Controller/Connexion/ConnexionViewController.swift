@@ -9,10 +9,16 @@
 import UIKit
 import Reusable
 
-class ConnexionViewController: UIViewController, StoryboardBased {
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+class ConnectionViewController: UIViewController, StoryboardBased {
+    // MARK: IBOutlets
+    @IBOutlet weak var signInButton: CustomConnexionButton!
+    @IBOutlet weak var signUpButton: CustomConnexionButton!
 
-        self.navigationController?.navigationBar.isHidden = true
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        signInButton.setTitle("Sign in".localizedString(), for: .normal)
+        signUpButton.setTitle("Sign up".localizedString(), for: .normal)
     }
 }
