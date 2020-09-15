@@ -27,7 +27,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        setLocalizedString()
     }
 
     // MARK: Methods
