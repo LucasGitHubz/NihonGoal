@@ -47,10 +47,10 @@
 		C6E55F0F2507D80F00BD63FF /* PracticeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E55F0E2507D80F00BD63FF /* PracticeNavigationController.swift */; };
 		C6E55F112507DDC000BD63FF /* ExerciseModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E55F102507DDC000BD63FF /* ExerciseModeViewController.swift */; };
 		C6E77CC324FFA24700C69153 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CC224FFA24700C69153 /* HomeViewController.swift */; };
-		C6E77CC524FFA26400C69153 /* ConnexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CC424FFA26400C69153 /* ConnexionViewController.swift */; };
+		C6E77CC524FFA26400C69153 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CC424FFA26400C69153 /* ConnectionViewController.swift */; };
 		C6E77CC724FFB48200C69153 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CC624FFB48200C69153 /* SplashViewController.swift */; };
 		C6E77CCA24FFB75400C69153 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CC924FFB75400C69153 /* UIViewController+extension.swift */; };
-		C6E77CCC24FFB7F300C69153 /* ConnexionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E77CCB24FFB7F300C69153 /* ConnexionViewController.storyboard */; };
+		C6E77CCC24FFB7F300C69153 /* ConnectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E77CCB24FFB7F300C69153 /* ConnectionViewController.storyboard */; };
 		C6E77CD124FFB93900C69153 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CD024FFB93900C69153 /* StateController.swift */; };
 		C6E77CD424FFB95100C69153 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E77CD324FFB95100C69153 /* LoadingViewController.swift */; };
 		C6E77CDB24FFBDBB00C69153 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E77CDA24FFBDBB00C69153 /* TabBarController.storyboard */; };
@@ -136,10 +136,10 @@
 		C6E55F0E2507D80F00BD63FF /* PracticeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeNavigationController.swift; sourceTree = "<group>"; };
 		C6E55F102507DDC000BD63FF /* ExerciseModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModeViewController.swift; sourceTree = "<group>"; };
 		C6E77CC224FFA24700C69153 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C6E77CC424FFA26400C69153 /* ConnexionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionViewController.swift; sourceTree = "<group>"; };
+		C6E77CC424FFA26400C69153 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		C6E77CC624FFB48200C69153 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		C6E77CC924FFB75400C69153 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		C6E77CCB24FFB7F300C69153 /* ConnexionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConnexionViewController.storyboard; sourceTree = "<group>"; };
+		C6E77CCB24FFB7F300C69153 /* ConnectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConnectionViewController.storyboard; sourceTree = "<group>"; };
 		C6E77CD024FFB93900C69153 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		C6E77CD324FFB95100C69153 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		C6E77CDA24FFBDBB00C69153 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
@@ -340,8 +340,8 @@
 		C6B9622024FF9E6100D9C0FE /* Connexion */ = {
 			isa = PBXGroup;
 			children = (
-				C6E77CCB24FFB7F300C69153 /* ConnexionViewController.storyboard */,
-				C6E77CC424FFA26400C69153 /* ConnexionViewController.swift */,
+				C6E77CCB24FFB7F300C69153 /* ConnectionViewController.storyboard */,
+				C6E77CC424FFA26400C69153 /* ConnectionViewController.swift */,
 				C6E77CE224FFD15D00C69153 /* SignInViewController.swift */,
 				C6E77CE424FFD16800C69153 /* SignUpViewController.swift */,
 			);
@@ -580,7 +580,7 @@
 				C6962C9A24FEA5BD00CC95FA /* Main.storyboard in Resources */,
 				C64DDA832505280D002E6A45 /* PracticeNavigationController.storyboard in Resources */,
 				C6D504D3250264A000360D1F /* KatakanaViewController.storyboard in Resources */,
-				C6E77CCC24FFB7F300C69153 /* ConnexionViewController.storyboard in Resources */,
+				C6E77CCC24FFB7F300C69153 /* ConnectionViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +729,7 @@
 				C6962C9324FEA5BD00CC95FA /* AppDelegate.swift in Sources */,
 				C6A2C9B22507C494002F7DA7 /* ExerciseViewController.swift in Sources */,
 				C6D504D72502654900360D1F /* KatakanaViewController.swift in Sources */,
-				C6E77CC524FFA26400C69153 /* ConnexionViewController.swift in Sources */,
+				C6E77CC524FFA26400C69153 /* ConnectionViewController.swift in Sources */,
 				C620CD7925065A1900B06DD0 /* BubbleViewController.swift in Sources */,
 				C6E77CCA24FFB75400C69153 /* UIViewController+extension.swift in Sources */,
 				C6E55F0F2507D80F00BD63FF /* PracticeNavigationController.swift in Sources */,
