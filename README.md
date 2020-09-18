@@ -5,7 +5,7 @@
 ## Features 
 
 - Sweet bubbles animations.
-- Learn Hiragana and Katakan easily !
+- Learn Hiragana and Katakana easily !
 - Practice what you learned in two ways:
      - If you start your learning, the ZEN mode is made for you ! Take the time to answer ans learn by your mistakes
      - But if you're confident in your capacities let's test the FAST mode ! Will you be successful in this exercise ? I'm not really sure...
